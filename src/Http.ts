@@ -23,6 +23,7 @@ export default class Http {
 
     this.axios = Axios.create({
       baseURL: this.host,
+      withCredentials: true,
       headers: {
         'Content-Type': 'application/json'
       },
